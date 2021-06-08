@@ -1,8 +1,9 @@
 // Задание 1
 function getArrayParams(arr) {
   let min,max,sum,avg;
-
-  // Ваш код
+  min = 101;
+  max = -101;
+  sum = 0;
 
   return { min:min, max:max, avg:avg };
 }
