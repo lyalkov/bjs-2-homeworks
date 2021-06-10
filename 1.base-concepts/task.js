@@ -2,16 +2,16 @@
 function solveEquation(a, b, c) {
   let arr = [];
   let D = Math.pow(b,2)-4*a*c;
+  let x1 = (-b+Math.sqrt(D))/(2*a);
+  let x2 = (-b-Math.sqrt(D))/(2*a);
   if(D < 0) {
     return arr;
   }
   if (D === 0) {
-    let x1 = (-b+Math.sqrt(D))/(2*a);
     arr.push(x1);
     return arr;
   } 
   if (D > 0) {
-    let x2 = (-b-Math.sqrt(D))/(2*a);
     arr.push(x1, x2);
     return arr;
   }
