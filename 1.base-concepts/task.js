@@ -5,16 +5,14 @@ function solveEquation(a, b, c) {
   let x1 = (-b+Math.sqrt(D))/(2*a);
   let x2 = (-b-Math.sqrt(D))/(2*a);
   if(D < 0) {
-    return arr;
   }
   if (D === 0) {
     arr.push(x1);
-    return arr;
   } 
   if (D > 0) {
     arr.push(x1, x2);
-    return arr;
   }
+  return arr;
 }
 
 function calculateTotalMortgage(percent, contribution, amount, date) {

@@ -4,8 +4,18 @@ function getArrayParams(arr) {
   min = 101;
   max = -101;
   sum = 0;
-
-  return { min:min, max:max, avg:avg };
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i];
+  }
+  if (arr[i] < min) {
+    min = arr[i];
+  }
+  sum+=arr[i];
+  avg = sum / arr[i];
+  avg.toFixed(2);
+}
+  return { min: min, max: max, avg: avg };
 }
 
 // Задание 2
