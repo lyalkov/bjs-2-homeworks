@@ -7,7 +7,8 @@ function getArrayParams(arr) {
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] > max) {
     max = arr[i];
-  } else if (arr[i] < min) {
+  } 
+  if (arr[i] < min) {
     min = arr[i];
   }
   sum+=arr[i];
@@ -24,19 +25,20 @@ function worker(arr) {
   return sum;
 }
 
-function mincer(arrOfArr, func) {
-  let max
+function makeWork(arrOfArr, func) {
+  let max = -Infinity;
   for (let i=0; i<arrOfArr.length; i++) {
-    let sumOfArr = worker(arrOfArr[i]);
+    let sumOfArr = func(arrOfArr[i]);
     if (sumOfArr > max) {
       max = sumOfArr;
     }
   }
-  
   return max
 }
 
 // Задание 3
 function worker2(arr) {
-  // Ваш код
+  let min = Infinity;
+  let max = -Infinity;
+  let distance = min - max;
 }
