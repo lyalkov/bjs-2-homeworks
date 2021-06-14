@@ -40,5 +40,13 @@ function makeWork(arrOfArr, func) {
 function worker2(arr) {
   let min = Infinity;
   let max = -Infinity;
-  let distance = min - max;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    } 
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+    let distance = max - min;
 }
+makeWork(arrOfArr, worker2);
