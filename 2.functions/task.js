@@ -47,7 +47,7 @@ function worker2(arr) {
     if (arr[i] < min) {
       min = arr[i];
     }
-    let distance = max - min;
-    return distance;
-}
+  }
+  let distance = max - min;
+  return distance;
 }
